@@ -1,0 +1,90 @@
+.about-us {
+  &__content {
+    @include page-grid;
+  }
+  
+  &__titles {
+    grid-column: 1 / -1;
+
+    @include on-tablet {
+      grid-column: 1 / 3;
+    }
+
+    @include on-desktop {
+      grid-column: span 5;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 0 2px;
+    font-size: 12px;
+    line-height: 17px;
+    color: #D12D35;
+  }
+  
+  &__location {
+    grid-column: 1 / -1;
+
+    @include on-tablet {
+      grid-column: 4 / 7;
+    }
+        
+    @include on-desktop {
+      grid-column: span 6;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  &__opening {
+    display: flex;
+    margin-top: 16px;
+  }
+      
+  &__closed {
+    margin-top: 16px;
+  }
+      
+  &__c-cloisters {
+    margin: 0;
+  }
+
+  &__opening-hours {
+    margin: 0;
+    padding-right: 24px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+  }
+        
+  &__opening-days {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+  }
+
+  &__p {
+    margin: 0;
+  }
+                    
+  &__p+&__p {
+    padding-top: 8px;
+  }
+
+  &__closed-title {
+    margin: 0;
+    font-weight: 700;
+  }
+           
+  &__c-avenue {
+    margin: 0;
+    margin-bottom: 24px;
+  }
+}

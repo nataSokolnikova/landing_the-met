@@ -1,0 +1,37 @@
+.explore-online {
+  margin-top: 100px;
+
+  &__wraper {
+    display: grid;
+    row-gap: 48px;
+
+    @include on-tablet {
+      justify-items: center;
+    }
+
+    @include on-desktop {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 24px;
+      justify-items: stretch;
+    }
+  }
+
+  &__photo {
+    width: 100%;
+  }
+
+  &__title {
+    margin-top: 24px;
+    margin-bottom: 4px;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #D12D35;
+  }
+
+  &__text {
+    margin: 0;
+    text-align: center;
+    font-family: Roboto;
+  }
+}

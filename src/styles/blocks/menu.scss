@@ -1,0 +1,76 @@
+.menu {
+  box-sizing: border-box;
+
+  height: 100vh;
+  background-color: #D12D35;
+
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+
+  overflow: auto;
+
+  &__top {
+    top: 0;
+    z-index: 1;
+  }
+
+  &__content {
+    margin: 0;
+  }
+  
+  &__nav {
+    margin-top: 15px;
+
+    @include on-tablet {
+      margin-top: 30px;
+    }
+  }
+
+  &__connect {
+    margin-top: 32px;
+
+    &-avenue {
+      margin-bottom: 8px;
+    }
+
+    &-cloisters {
+      margin-bottom: 16px;
+    }
+
+    &-title {
+      margin: 0;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      color: #FFFFFF;
+      text-transform: uppercase;
+    }
+
+    &-phone {
+      display: block;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 27px;
+      color: #FFFFFF;
+    }
+  }
+
+  &__call-to-order {
+    display: block;
+    width: fit-content;
+    
+    padding-bottom: 8px;
+    border-bottom: 1px solid #FFFFFF;
+    
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+}
+
